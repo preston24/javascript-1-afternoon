@@ -18,7 +18,13 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function isTyler(name) {
+  if (name === "Tyler") {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -28,7 +34,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function getName() {
+  return prompt();
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -41,6 +49,10 @@ var name = 'Tyler';
 */
 
 //Code Here
+function welcome() {
+  alert("Welcome, " + getName());
+}
+
 
 
 
@@ -51,7 +63,9 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+/* Arguments: The data received by a function.
+Parameters: The information passed into a function.
+*/
 
 
 ////////// PROBLEM 5 //////////
@@ -61,7 +75,8 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+/* false, null, undefined, 0, NaN. To check if something is falsy you'd run an if statment to check to see if it comes back true or false.
+*/
 
 
 ////////// PROBLEM 6 //////////
@@ -71,7 +86,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
+  function myName() {
+    return "Preston";
+  }
 
 
 /*
@@ -79,7 +96,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function newMyName() {
+  newMyName = myName;
+}
 
 
 /*
@@ -87,7 +106,7 @@ var name = 'Tyler';
 */
 
 // Code Here
-
+alert(newMyName);
 
 
 ////////// PROBLEM 7 //////////
@@ -97,7 +116,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function outerFn() {
+  return myName;
+}
 
 
 /*
@@ -106,6 +127,7 @@ var name = 'Tyler';
 
 //Code Here
 
+var innerFn = outerFn();
 
 
 /* 
@@ -113,3 +135,4 @@ var name = 'Tyler';
 */
 
 // Code Here
+innerFn();
